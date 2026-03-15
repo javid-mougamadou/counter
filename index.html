@@ -25,9 +25,10 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <meta name="apple-mobile-web-app-title" content="Counter" />
 
+    <!-- Google (injected at build: GOOGLE_SITE_VERIFICATION, GOOGLE_ANALYTICS_GTAG) -->
     <meta name="google-site-verification" content="%GOOGLE_SITE_VERIFICATION%" />
 
-    <!-- Google tag (gtag.js) - %GOOGLE_ANALYTICS_GTAG% -->
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=%GOOGLE_ANALYTICS_GTAG%"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -47,6 +48,6 @@
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="src/main.tsx"></script>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
