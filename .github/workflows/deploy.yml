@@ -65,8 +65,7 @@ jobs:
           CUSTOM_DOMAIN: "true"
           GITHUB_PAGES: "true"
           GITHUB_REPOSITORY: ${{ github.repository }}
-          GOOGLE_SITE_VERIFICATION: ${{ secrets.GOOGLE_SITE_VERIFICATION }}
-          GOOGLE_ANALYTICS_GTAG: ${{ secrets.GOOGLE_ANALYTICS_GTAG }}
+          GOOGLE_ANALYTICS_GTAG: "G-X9WNRTZNX2"
         run: npm run build
 
       - name: Setup Pages

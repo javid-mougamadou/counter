@@ -18,17 +18,11 @@ export default defineConfig({
     {
       name: 'html-google-env',
       transformIndexHtml(html) {
-        const siteVerification =
-          process.env.GOOGLE_SITE_VERIFICATION ||
-          process.env.VITE_GOOGLE_SITE_VERIFICATION ||
-          ''
         const gtagId =
           process.env.GOOGLE_ANALYTICS_GTAG ||
           process.env.VITE_GOOGLE_ANALYTICS_GTAG ||
           GA_GTAG_DEFAULT
-        return html
-          .replace(/%GOOGLE_SITE_VERIFICATION%/g, siteVerification)
-          .replace(/%GOOGLE_ANALYTICS_GTAG%/g, gtagId)
+        return html.replace(/%GOOGLE_ANALYTICS_GTAG%/g, gtagId)
       },
     },
   ],
