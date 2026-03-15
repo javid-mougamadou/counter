@@ -25,7 +25,16 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <meta name="apple-mobile-web-app-title" content="Counter" />
 
-    <meta name="google-site-verification" content="qEPWUv9-9tc_c9CNFzOWPkxl_dDnQo-sGuk8bzX1s0g" />
+    <meta name="google-site-verification" content="%GOOGLE_SITE_VERIFICATION%" />
+
+    <!-- Google tag (gtag.js) - %GOOGLE_ANALYTICS_GTAG% -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=%GOOGLE_ANALYTICS_GTAG%"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '%GOOGLE_ANALYTICS_GTAG%');
+    </script>
 
     <!-- Icons and Manifest (relative paths for GitHub Pages / any base URL) -->
     <link rel="manifest" href="manifest.webmanifest?v=1" />
@@ -38,6 +47,6 @@
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <script type="module" src="src/main.tsx"></script>
   </body>
 </html>
