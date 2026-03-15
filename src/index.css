@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@plugin "daisyui";
+
+/* Remplacer le primary violet par orange (thèmes light et dark) */
+[data-theme='light'] {
+  --color-primary: oklch(65% 0.18 55);
+  --color-primary-content: oklch(98% 0.02 55);
+}
+
+[data-theme='dark'] {
+  --color-primary: oklch(70% 0.18 55);
+  --color-primary-content: oklch(20% 0.05 55);
+}

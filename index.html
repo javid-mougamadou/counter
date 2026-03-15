@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <script>
+      (function() {
+        try {
+          var key = 'counter.theme-v1';
+          var stored = typeof localStorage !== 'undefined' ? localStorage.getItem(key) : null;
+          var isLight = stored != null && String(stored).trim().toLowerCase() === 'light';
+          document.documentElement.setAttribute('data-theme', isLight ? 'light' : 'dark');
+        } catch (e) {}
+      })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="description" content="Multiple mini counters - create and increment. By Javid Mougamadou." />
+    <meta name="author" content="Javid Mougamadou" />
+    <meta name="keywords" content="counter, counters, PWA, Javid Mougamadou" />
+    <title>Counter - Javid Mougamadou</title>
+
+    <!-- PWA Meta Tags -->
+    <meta name="theme-color" content="#1d232a" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Counter" />
+
+    <meta name="google-site-verification" content="qEPWUv9-9tc_c9CNFzOWPkxl_dDnQo-sGuk8bzX1s0g" />
+
+    <!-- Icons and Manifest (favicon_io in public/assets) -->
+    <link rel="manifest" href="/manifest.webmanifest?v=1" />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/android-chrome-512x512.png" />
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
