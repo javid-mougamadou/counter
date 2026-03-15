@@ -62,6 +62,7 @@ jobs:
 
       - name: Build
         env:
+          CUSTOM_DOMAIN: "true"
           GITHUB_PAGES: "true"
           GITHUB_REPOSITORY: ${{ github.repository }}
           GOOGLE_SITE_VERIFICATION: ${{ secrets.GOOGLE_SITE_VERIFICATION }}
