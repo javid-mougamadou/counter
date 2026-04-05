@@ -52,3 +52,9 @@ Generate favicon and PWA icons at [favicon.io](https://favicon.io/favicon-genera
 - **Git init** (configurable branch): `GIT_INITIAL_BRANCH=main ./scripts/init-git.sh` — see [docs/CREATION_DEPOT.md](docs/CREATION_DEPOT.md).
 - **GitHub description & topics**: [docs/REPO_DESCRIPTION.md](docs/REPO_DESCRIPTION.md).
 - **CI / Deploy**: [.github/workflows/deploy.yml](.github/workflows/deploy.yml) (reference copy in [reference/github-actions/](reference/github-actions/)).
+
+---
+
+## Contact
+
+**Contact :** **Javid Mougamadou** — [Site web](https://javid-mougamadou.pro/) · [GitHub](https://github.com/javid-mougamadou) · [LinkedIn](https://www.linkedin.com/in/mougamadoujavid/) · [Discord](https://discord.gg/8rK6CKGb) · [Email](mailto:javid.mougamadou2@gmail.com)
